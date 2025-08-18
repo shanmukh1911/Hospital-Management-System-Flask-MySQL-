@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Patient History</title></head>
+<body>
+    <h2>Patient History</h2>
+    {% for row in history %}
+        <p>Encounter: {{ row.encounter_id }} | Doctor: {{ row.doctor }} | Start: {{ row.visit_start }} | End: {{ row.visit_end }}</p>
+        <p>Notes: {{ row.notes }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>

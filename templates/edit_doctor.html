@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-4">✏ Edit Doctor</h2>
+<form method="POST">
+    <div class="mb-3">
+        <label>First Name</label>
+        <input type="text" name="first_name" class="form-control" value="{{ doctor.first_name }}" required>
+    </div>
+    <div class="mb-3">
+        <label>Last Name</label>
+        <input type="text" name="last_name" class="form-control" value="{{ doctor.last_name }}" required>
+    </div>
+    <div class="mb-3">
+        <label>Specialty</label>
+        <input type="text" name="specialty" class="form-control" value="{{ doctor.specialty }}" required>
+    </div>
+    <div class="mb-3">
+        <label>Contact</label>
+        <input type="text" name="contact" class="form-control" value="{{ doctor.contact }}" required>
+    </div>
+    <button type="submit" class="btn btn-success">💾 Save Changes</button>
+    <a href="{{ url_for('view_doctors') }}" class="btn btn-secondary">⬅ Back</a>
+</form>
+{% endblock %}
