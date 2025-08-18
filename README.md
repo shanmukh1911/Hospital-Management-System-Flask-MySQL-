@@ -5,7 +5,7 @@ Allows admins and doctors to manage patients, appointments, and encounters with 
 
 ---
 
-## ✨ Features
+## 1 Features
 - Role-based authentication: **Admin** and **Doctor**
 - Admin can **add/edit/delete doctors and patients**
 - Doctors can **view patient history and appointments**
@@ -15,11 +15,11 @@ Allows admins and doctors to manage patients, appointments, and encounters with 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ---
 
-### 2️⃣ How it appears on GitHub
+### 2️ How it appears on GitHub
 
 
 ```markdown
@@ -41,6 +41,6 @@ Hospital-Management-System/
 │ ├── login.html
 │ └── edit_doctor.html
 └── static/ # Optional: CSS, JS, images
-```text
-# your folder tree here
+```
+
 
