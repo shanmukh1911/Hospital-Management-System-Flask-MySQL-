@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <!-- Card with animation -->
+    <div class="card shadow-lg border-0 rounded-4 animate__animated animate__fadeInDown">
+        <div class="card-header bg-gradient text-white text-center"
+             style="background: linear-gradient(45deg, #28a745, #20c997);">
+            <h2 class="mb-0">🔍 Search Patient</h2>
+        </div>
+        <div class="card-body p-4">
+            <form method="POST" class="d-flex justify-content-center mb-4">
+                <input type="text" name="search_query" placeholder="Enter ID or Name"
+                       class="form-control me-2 shadow-sm" style="max-width: 400px;" required>
+                <button type="submit" class="btn btn-success shadow scale-on-hover">
+                    Search
+                </button>
+            </form>
+
+            {% if patients is not none %}
+                <div class="animate__animated animate__fadeInDown animate__faster">
+                    <h4 class="text-center mb-3">Results for "<span class="text-primary">{{ search_term }}</span>"</h4>
+
+                    {% if patients %}
+                        <div class="table-responsive">
+                            <table class="table table-hover shadow-sm rounded-3 overflow-hidden">
+                                <thead class="table-success">
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>First Name</th>
+                                        <th>Last Name</th>
+                                        <th>DOB</th>
+                                        <th>Gender</th>
+                                        <th>Contact</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for patient in patients %}
+                                    <tr class="animate__animated animate__fadeInDown">
+                                        <td>{{ patient.id }}</td>
+                                        <td>{{ patient.first_name }}</td>
+                                        <td>{{ patient.last_name }}</td>
+                                        <td>{{ patient.dob }}</td>
+                                        <td>{{ patient.gender }}</td>
+                                        <td>{{ patient.contact }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        </div>
+                    {% else %}
+                        <p class="text-center text-danger fw-bold">❌ No patients found.</p>
+                    {% endif %}
+                </div>
+            {% endif %}
+
+            <div class="text-center mt-3">
+                <a href="/" class="btn btn-outline-secondary shadow-sm scale-on-hover">⬅ Back to Home</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Animate.css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<style>
+/* Button hover effect */
+.scale-on-hover {
+    transition: transform 0.2s ease-in-out;
+}
+.scale-on-hover:hover {
+    transform: scale(1.08);
+}
+</style>
+{% endblock %}
+

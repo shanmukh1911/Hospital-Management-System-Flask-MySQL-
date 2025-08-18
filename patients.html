@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2 class="mb-3">Registered Patients</h2>
+
+<table class="table table-striped table-bordered">
+    <thead class="table-dark">
+        <tr>
+            <th>Patient ID</th><th>First Name</th><th>Last Name</th><th>DOB</th><th>Gender</th><th>Contact</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for patient in patients %}
+        <tr>
+            <td>{{ patient.patient_id }}</td>
+            <td>{{ patient.first_name }}</td>
+            <td>{{ patient.last_name }}</td>
+            <td>{{ patient.dob }}</td>
+            <td>{{ patient.gender }}</td>
+            <td>{{ patient.contact }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Search form at bottom -->
+<h3 class="mt-4">🔍 Search Patient</h3>
+<form method="POST" action="{{ url_for('search_patient') }}" class="d-flex">
+    <input type="text" name="search_query" class="form-control me-2" placeholder="Enter ID or Name" required>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>
+{% endblock %}
