@@ -43,4 +43,34 @@ Hospital-Management-System/
 └── static/ # Optional: CSS, JS, images
 ```
 
+---
+
+##  Installation & Setup
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/shanmukh1911/Hospital-Management-System-Flask-MySQL-.git
+cd Hospital-Management-System-Flask-MySQL-
+```
+2.
+python -m venv venv
+# Windows
+venv\Scripts\activate
+# Linux / Mac
+source venv/bin/activate
+pip install -r requirements.txt
+python app.py
+
+3. **Usage**
+  Admin: manage doctors & patients
+  Doctor: view appointments & patient history
+  Use the navigation bar to access different sections
+  Interactive forms and tables with animations
+
+4. **Future Improvements**
+   Hash passwords for security
+   Role-based dashboards with custom layouts
+   Enhanced error handling and validation
+   Add static assets for richer animations & UI
+
 
