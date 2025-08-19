@@ -52,14 +52,17 @@ Hospital-Management-System/
 git clone https://github.com/shanmukh1911/Hospital-Management-System-Flask-MySQL-.git
 cd Hospital-Management-System-Flask-MySQL-
 ```
-2.
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux / Mac
-source venv/bin/activate
-pip install -r requirements.txt
-python app.py
+2. **Create and activate a virtual environment**
+  ```bash
+  python -m venv venv
+  # Windows
+  venv\Scripts\activate
+  # Linux / Mac
+  source venv/bin/activate
+  
+  pip install -r requirements.txt
+  python app.py
+  ```
 
 3. **Usage**
   Admin: manage doctors & patients
