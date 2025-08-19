@@ -64,7 +64,7 @@ cd Hospital-Management-System-Flask-MySQL-
   python app.py
   ```
 ---
-##3. **Usage**
+## 3  **Usage**
 -Admin: manage doctors & patients
 -Doctor: view appointments & patient history
 -Use the navigation bar to access different sections
