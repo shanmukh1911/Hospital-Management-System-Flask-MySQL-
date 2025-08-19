@@ -64,12 +64,17 @@ cd Hospital-Management-System-Flask-MySQL-
   python app.py
   ```
 ---
+
 ---
-## 3  **Usage**
--Admin: manage doctors & patients
--Doctor: view appointments & patient history
--Use the navigation bar to access different sections
--Interactive forms and tables with animations
+
+## 1 Features
+- Role-based authentication: **Admin** and **Doctor**
+- Admin can **add/edit/delete doctors and patients**
+- Doctors can **view patient history and appointments**
+- Book and manage appointments
+- Search patients by **ID or name**
+- Responsive and animated UI for better user experience
+
 ---
 
 ##4. **Future Improvements**
