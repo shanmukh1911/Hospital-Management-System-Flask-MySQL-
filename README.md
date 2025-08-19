@@ -63,13 +63,13 @@ cd Hospital-Management-System-Flask-MySQL-
   pip install -r requirements.txt
   python app.py
   ```
-
+---
 ##3. **Usage**
-  ```Admin: manage doctors & patients
-  Doctor: view appointments & patient history
-  Use the navigation bar to access different sections
-  Interactive forms and tables with animations
-  ```
+-Admin: manage doctors & patients
+-Doctor: view appointments & patient history
+-Use the navigation bar to access different sections
+-Interactive forms and tables with animations
+---
 
 ##4. **Future Improvements**
    
