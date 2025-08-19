@@ -64,21 +64,26 @@ cd Hospital-Management-System-Flask-MySQL-
   python app.py
   ```
 ---
-
+-Hash passwords for security
+ -Role-based dashboards with custom layouts
+ -Enhanced error handling and validation
+ -Add static assets for richer animations & UI
 ---
 
-## 1 Features
+## 3 Usage
 - **Admin**: manage doctors & patients
 - **Doctor**: view appointments & patient history
 - Use the navigation bar to access different sections
 - Interactive forms and tables with animations
 ---
 
-##4. **Future Improvements**
-   
- -Hash passwords for security
- -Role-based dashboards with custom layouts
- -Enhanced error handling and validation
- -Add static assets for richer animations & UI
+## 4 Future Improvements
+- Hash passwords for security
+- Role-based dashboards with custom layouts
+- Enhanced error handling and validation
+- Add static assets for richer animations & UI
+---
+
+
 
 
